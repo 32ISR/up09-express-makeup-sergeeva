@@ -1,0 +1,18 @@
+meta {
+  name: login
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://obscure-fortnight-694vvq67446phx464-3000.app.github.dev/api/auth/login
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "username": "admin",
+    "password": "qwerty123"
+  }
+}
